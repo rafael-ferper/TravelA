@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+.little-text{
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+h6{
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+label{
+  margin-bottom: 0;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px){
+
+}
+@media (max-width: 768px){
+  
+}
+@media (max-width: 576px){
+  
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"]{
+    padding: 1.5rem;
+}
+
+::selection{
+  background-color: #eea330;
+  color: #fff;
+}
+
+::-moz-selection{
+  background-color: #eea330;
+  color: #fff;
+}
+
+html, body{
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+.bg{
+  background: url('img/background2.jpg') no-repeat bottom center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 50vh;
+}
+
+#img-bg{
+  background: url('img/background2.jpg') no-repeat bottom center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 50vh;
+}
+
+.whitespace{
+  padding: 4% 0;
+}
+
+.white-bg{
+  background-color: #fff;
+}
+
+.banner-text{
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.banner-btn{
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  box-shadow: 1px 1px 8px #000;
+  border-radius: 0px;
+  padding: 10px 30px;
+}
+
+.navbar{
+  padding: .8rem;
+}
+
+.navbar-nav li{
+  padding-right: 20px;
+}
+
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+#margin{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+footer{
+  background-color: #111111;
+  color: #fff;
+}
+
+footer span{
+  color: #eea330;
+}
+
+a:link, a:active, a:visited{
+  color: #eea330;
+  transition: all 1s;
+}
+
+a:hover{
+  color: #d18e29;
+}
+
+footer a:link, footer a:active, footer a:visited{
+  color: #fff;
+  transition: all 1s;
+}
+
+footer a:hover{
+  color: #eea330;
+}
+
+.btn-main{
+  background-color: #eea330;
+  color: #fff;
+  transition: all 1s;
+}
+
+.btn-main:hover{
+  background-color: #d18e29;
+}
+
+.page-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.padding{
+  padding-top: 6%;
+}

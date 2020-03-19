@@ -69,7 +69,7 @@ var searchOrigin = 'origin';
 			var onsubmit = function(event){
 				event.preventDefault();
 
-				if(!locat() || !checkdate()){
+				if(!locat() || !checkdate() || !justnumb()){
 				
 				}else{
 					form.submit();
@@ -101,4 +101,9 @@ var searchOrigin = 'origin';
 			} else {
 				return true;
 			}
-		}
+        }
+        
+        function justnumb(num) {
+            var er = /[^0-9.]/;
+            er.lastIndex = 0;
+        }

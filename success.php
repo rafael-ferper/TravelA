@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,12 +13,12 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 
-<body id="img-bg">
+<body id="img-bg" class="d-flex flex-column h-100">
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-light sticky-top white-bg border-bottom border-medium">
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top white-bg border-bottom border-medium">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="index.php">
 				<h3>TRAVEL A</h3>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -28,7 +27,7 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="index.html">HOME</a>
+						<a class="nav-link" href="index.php">HOME</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">TICKETS</a>
@@ -48,15 +47,15 @@
 	</nav>
 
 	<!-- BANNER -->
-	<div class="container-fluid img-bg">
-		<div class="col-md-12">
-			<div class="row padding">
-				<div class=" offset-md-3 col-md-6 offset-sm-3 col-sm-6 text-center">
-					<h1 class="banner-text">Thank you for sending us your trip!</h1>
+	<div class="container-fluid">
+		<div class="col-lg-12">
+			<div class="row align-items-center">
+				<div class=" offset-lg-3 col-lg-6 offset-sm-3 col-sm-6 text-center">
+					<h1 class="banner-text align-middle">Thank you for sending us your trip!</h1>
 				</div>
-
-
-				<div class="offset-md-3 col-md-6 offset-sm-3 col-sm-6 text-center">
+			</div>
+			<div class="row">
+				<div class=" offset-lg-3 col-lg-6 offset-sm-3 col-sm-6 text-center">
 					<h1 class="banner-text">Soon one of our attendants will call you.</h1>
 				</div>
 			</div>
@@ -66,14 +65,14 @@
 
 
 	<!--- FOOTER -->
-	<footer class="page-footer">
+	<footer class="footer mt-auto">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 d-flex align-items-center">
+				<div class="col-lg-8 col-md-8 col-10 offset-md-0 offset-1  d-flex align-items-center">
 					<div class="little-text">TRAVEL A | All rights reserved. <span>contato@travela.com | +55
 							(35) 3621-4551</span></div>
 				</div>
-				<div class="offset-md-2 col-md-2 d-flex justify-content-around">
+				<div class="col-lg-2 col-md-4 offset-lg-2 d-flex evenly">
 					<a href="#"><i class="fab fa-facebook"></i></a>
 					<a href="#"><i class="fab fa-instagram"></i></a>
 					<a href="#"><i class="fab fa-twitter"></i></a>
@@ -89,7 +88,7 @@
 </html>
 
 <?php
-	
+
 	require_once('db_class.php');
 	
 	$name = $_POST['name'];
@@ -107,4 +106,5 @@
 
 	//run the query
 	mysqli_query($link,$sql);
+
 ?>

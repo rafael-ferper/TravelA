@@ -4,31 +4,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>TRAVEL A - HOME</title>
 
-
-
-	<!-- JQUERY -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyBDKDw22quZGnOuI8EAETr_LEuh9twwY44"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
-
-
-	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
-	<!-- CSS -->
 	<link href="style.css" rel="stylesheet">
-
 
 </head>
 
 <body>
 
-	<!-- Navigation -->
+	<!-- NAVBAR -->
 	<nav class="navbar navbar-expand-lg navbar-light white-bg border-bottom border-medium">
 		<div class="container">
 			<a class="navbar-brand" href="index.php">
@@ -39,20 +30,20 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="index.php">HOME</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">TICKETS</a>
+						<a class="nav-link disabled" href="#">TICKETS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">HOTELS</a>
+						<a class="nav-link disabled" href="#">HOTELS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">PACKAGES</a>
+						<a class="nav-link disabled" href="#">PACKAGES</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">RESORTS</a>
+						<a class="nav-link disabled" href="#">RESORTS</a>
 					</li>
 				</ul>
 			</div>
@@ -72,8 +63,8 @@
 			</div>
 		</div>
 	</div>
-	<!--- TWO COLUMN SECTION -->
 
+	<!--- TWO COLUMN SECTION -->
 	<div class="container whitespace" id="form">
 		<div class="row">
 			<div class="col-lg-6">
@@ -159,25 +150,28 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<p class="text-justify">
+						Travel A does everything for a good trip. That is why it works to
+						 transform this experience into the best achievement of your life, 
+						through new trends and a wide network of tourism products and services.
 						</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<p class="text-justify">
+						We format products and adapt the price of these products to customers' 
+						ability to pay. We develop new national and international markets. We 
+						encourage the development of local suppliers and receptives.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="text-justify">
+						We would like to make tourism accessible to all people, offering quality 
+						products and services at fair prices, dedicating ourselves daily 
+						to making each client's dream come true.
 						</p>
 					</div>
 				</div>
@@ -190,7 +184,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-10 offset-md-0 offset-1  d-flex align-items-center">
-					<div class="little-text">TRAVEL A | All rights reserved. <span>contato@travela.com | +55
+					<div class="little-text">TRAVEL A | All rights reserved. <span>contact@travela.com | +55
 							(35) 3621-4551</span></div>
 				</div>
 				<div class="col-lg-2 col-md-4 offset-lg-2 d-flex evenly">
@@ -202,9 +196,6 @@
 		</div>
 	</footer>
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<!-- JQUERY MASK PLUGIN -->
 	<script src="js/jquery.mask.min.js"></script>
 	<!-- JQUERY VALIDADE PLUGIN -->

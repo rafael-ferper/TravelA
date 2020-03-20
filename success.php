@@ -4,18 +4,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>TRAVEL A - SUCCESS</title>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
+
 </head>
 
 <body id="img-bg" class="d-flex flex-column h-100">
 
-	<!-- Navigation -->
+	<!-- NAVBAR -->
 	<nav class="navbar navbar-expand-lg navbar-light sticky-top white-bg border-bottom border-medium">
 		<div class="container">
 			<a class="navbar-brand" href="index.php">
@@ -69,7 +72,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-10 offset-md-0 offset-1  d-flex align-items-center">
-					<div class="little-text">TRAVEL A | All rights reserved. <span>contato@travela.com | +55
+					<div class="little-text">TRAVEL A | All rights reserved. <span>contact@travela.com | +55
 							(35) 3621-4551</span></div>
 				</div>
 				<div class="col-lg-2 col-md-4 offset-lg-2 d-flex evenly">
@@ -89,22 +92,22 @@
 
 <?php
 
-	require_once('db_class.php');
-	
-	$name = $_POST['name'];
-	$phone = $_POST['phone'];
-	$origin = $_POST['origin'];
-	$destination = $_POST['destination'];
-	$dateTo = $_POST['dateTo'];
-	$dateFrom = $_POST['dateFrom'];
-	$tnumber = $_POST['tnumber'];
+require_once('db_class.php');
 
-	$objDb = new db();
-	$link = $objDb->connect_mysql();
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$origin = $_POST['origin'];
+$destination = $_POST['destination'];
+$dateTo = $_POST['dateTo'];
+$dateFrom = $_POST['dateFrom'];
+$tnumber = $_POST['tnumber'];
 
-	$sql = " insert into travels(name, phone, origin, destination, dateTo, dateFrom, tnumber) values ('$name', '$phone', '$origin', '$destination', '$dateTo', '$dateFrom', '$tnumber')";
+$objDb = new db();
+$link = $objDb->connect_mysql();
 
-	//run the query
-	mysqli_query($link,$sql);
+$sql = " insert into travels(name, phone, origin, destination, dateTo, dateFrom, tnumber) values ('$name', '$phone', '$origin', '$destination', '$dateTo', '$dateFrom', '$tnumber')";
+
+//run the query
+mysqli_query($link, $sql);
 
 ?>
